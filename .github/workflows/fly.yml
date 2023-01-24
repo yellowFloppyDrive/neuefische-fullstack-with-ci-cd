@@ -34,12 +34,6 @@ jobs:
       - name: Prepare backend resources
         run: cd backend && rm -rf src/main/resources/static && cp -a ../frontend/build src/main/resources/static
 
-      - name: Sonar Analyze
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: cd backend && mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=bitbytejoy_neuefische-fullstack-with-ci-cd
-
       - name: Build with Maven
         run: cd backend && ./mvnw -B package --file pom.xml
 
