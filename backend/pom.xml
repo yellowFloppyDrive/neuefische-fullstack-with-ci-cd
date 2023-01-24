@@ -16,6 +16,9 @@
     <description>backend</description>
     <properties>
         <java.version>19</java.version>
+
+        <sonar.organization>bitbytejoy</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
     <dependencies>
         <dependency>
