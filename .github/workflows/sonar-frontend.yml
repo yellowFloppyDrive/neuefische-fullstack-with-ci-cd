@@ -1,4 +1,4 @@
-name: Sonar Analysis
+name: Sonar Analysis Frontend
 
 on:
   push:
@@ -34,7 +34,7 @@ jobs:
           key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
 
-      - name: Analyze frontend
+      - name: Analyze
         uses: SonarSource/sonarcloud-github-action@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
