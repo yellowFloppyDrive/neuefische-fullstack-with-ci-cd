@@ -1,3 +1,7 @@
+# Project Status
+
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=bitbytejoy_neuefische-fullstack-with-ci-cd-backend&metric=coverage)](https://sonarcloud.io/summary/new_code?id=bitbytejoy_neuefische-fullstack-with-ci-cd-backend)
+
 # Steps
 
     # Install flyctl (https://fly.io/docs/hands-on/install-flyctl/)
